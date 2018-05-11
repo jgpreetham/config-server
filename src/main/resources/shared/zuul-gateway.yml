@@ -1,0 +1,22 @@
+server:
+  port: 8763
+  
+  
+zuul:
+  ignoredServices: '*'
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 20000
+
+  routes:
+    student-service:
+        path: /students/**
+        serviceId: student-service
+        stripPrefix: false
+        sensitiveHeaders:
+
+    course-service:
+        path: /courses/**
+        serviceId: course-service
+        stripPrefix: false
+        sensitiveHeaders:

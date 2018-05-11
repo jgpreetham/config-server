@@ -1,0 +1,11 @@
+server:
+  port: 8902
+  
+spring:
+  datasource:
+    url: jdbc:hsqldb:hsql://localhost/
+    username: sa
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
