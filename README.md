@@ -1,4 +1,4 @@
-# config-server
+# config-server (Microservice)
 Spring Cloud Config Server
 
 Run as spring boot app.
